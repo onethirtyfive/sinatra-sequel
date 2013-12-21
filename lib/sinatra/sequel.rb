@@ -18,7 +18,7 @@ module Sinatra
 
     def database
       @database ||=
-        Sequel.connect(database_url, :encoding => 'utf-8')
+        Sequel.connect(database_url, :encoding => 'utf8')
     end
 
     def migration(name, &block)
